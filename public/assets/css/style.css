@@ -1,29 +1,52 @@
 li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
 }
 
 label {
-  font-weight: bold;
+    font-weight: bold;
+}
+
+body {
+    background-color: black;
 }
 
 .create-update-form {
-  padding: 5px;
-  margin: 5px;
-  background: aqua;
-  text-align: center;
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+    text-align: center;
 }
 
 .form-group {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
-#right, #left {
-	border:solid black 4px;
+#right,
+#left {
+    border: solid black 4px;
+    background-color: white;
+}
+
+#createTitle{
+  color:white;
 }
 
 #clearDiv {
-	position: relative;
-	clear:both;
+    position: relative;
+    clear: both;
+}
+
+#title{  
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0.5em;
+}
+
+#title h1 {
+    text-align: center;
+    color: #E0E0E0;
+    border: red dotted 7px;
+    padding-bottom:0.2em;
 }

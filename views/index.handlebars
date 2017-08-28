@@ -1,9 +1,11 @@
-<div class="container">
-    <h1>Oh Burger My Burger</h1></div>
+<div class="container" id="title">
+    <h1>Oh Burger My Burger</h1>
+</div>
 <div class="container">
     <div class="row">
-        <div class="col-md-5">
-            <h2>Let's burger!</h2>
+        <div class="col-md-5" id="left">
+            <h2>Let's burger! <img src="https://s2.postimg.org/dufgt5iop/burger.png" alt="eat" width="40"/></h2>
+            <hr>
             <ul>
                 {{#each burgers}} {{#unless this.devoured}}
                 <li>
@@ -19,15 +21,16 @@
         </div>
         <div class="col-md-2">
         </div>
-        <div class="col-md-5">
-            <h2>Burgers in da TUMMY!</h2>
+        <div class="col-md-5" id="right">
+            <h2>Burgers in da TUMMY! <img src="https://s2.postimg.org/bzy0xo6ah/bitten.png" alt="eaten" width="42"/></h2>
+            <hr>
             <ul>
                 {{#each burgers}} {{#if this.devoured}}
                 <li>
                     {{this.name}}
                     <form action="/{{this.id}}?_method=PUT" method="POST">
                         <input type="hidden" name="devoured" value="false">
-                        <button type="submit">VOMIT UP!</button>
+                        <button type="submit">ANOTHER!</button>
                     </form>
                     {{> burgers/delete-burger}}
                 </li>
@@ -37,7 +40,7 @@
     </div>
 </div>
 <div class="container" id="clearDiv">
-    <h2>Create a Burger</h2>
+    <h2 id="createTitle">Create a Burger</h2>
     <form class="create-update-form" action="/" method="POST">
         <div class="form-group">
             <label for="ingredient">Choose Your Ingredients: </label>
