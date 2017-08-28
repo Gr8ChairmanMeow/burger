@@ -1,0 +1,38 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+#right, #left {
+	border:solid black 4px;
+}
+
+#right {
+	position: relative;
+	float:right;
+}
+
+#left {
+	position:relative;
+	float:left;
+}
+
+#clearDiv {
+	position: relative;
+	clear:both;
+}
