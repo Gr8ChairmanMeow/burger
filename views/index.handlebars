@@ -40,18 +40,30 @@
     <h2>Create a Burger</h2>
     <form class="create-update-form" action="/" method="POST">
         <div class="form-group">
-            <label for="sleepy">Sleepy?</label>
+            <label for="ingredient">Choose Your Ingredients: </label>
             <br>
-            <input type="radio" name="devoured" value="1" checked> Ready to eat!
-            <br>
-            <input type="radio" name="devoured" value="0"> Devoured.
-        </div>
-        <div class="form-group">
-            <label for="sleepy">Sleepy?</label>
-            <br>
-            <input type="radio" name="devoured" value="1" checked> Ready to eat!
-            <br>
-            <input type="radio" name="devoured" value="0"> Devoured.
+            <div id="options">
+                Choose a size:
+                <input type="radio" class="ingredient" name="size" value="" checked> Single! |
+                <input type="radio" class="ingredient" name="size" value="Double"> Double! |
+                <input type="radio" class="ingredient" name="size" value="Triple"> Triple! |
+                <input type="radio" class="ingredient" name="size" value="Quadruple"> Quadruple!
+                <br> Select a protein:
+                <input type="radio" class="ingredient" name="protein" value="Beef" checked> Beef! |
+                <input type="radio" class="ingredient" name="protein" value="Chicken"> Chicken! |
+                <input type="radio" class="ingredient" name="protein" value="Veggie"> Veggie! |
+                <input type="radio" class="ingredient" name="protein" value="Tofu"> Tofu!
+                <br> Add toppings:
+                <input type="checkbox" class="ingredient" name="topping" value="Mushroom" checked> Mushroom! |
+                <input type="checkbox" class="ingredient" name="topping" value="Bacon" checked> Bacon! |
+                <input type="checkbox" class="ingredient" name="topping" value="Ranch" checked> Ranch!|
+                <input type="checkbox" class="ingredient" name="topping" value="Sriracha" checked> Sriracha!
+                <br> Add extra:
+                <input type="radio" class="ingredient" name="extra" value="Cheddar" checked> Cheddar! |
+                <input type="radio" class="ingredient" name="extra" value="Gouda"> Gouda! |
+                <input type="radio" class="ingredient" name="extra" value="Swiss"> Swiss! |
+                <input type="radio" class="ingredient" name="extra" value="Treeline Vegan"> Treeline Vegan Cheese!
+            </div>
         </div>
         <button type="submit">Add Burger</button>
     </form>

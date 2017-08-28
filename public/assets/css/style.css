@@ -12,6 +12,7 @@ label {
   padding: 5px;
   margin: 5px;
   background: aqua;
+  text-align: center;
 }
 
 .form-group {
@@ -20,16 +21,6 @@ label {
 
 #right, #left {
 	border:solid black 4px;
-}
-
-#right {
-	position: relative;
-	float:right;
-}
-
-#left {
-	position:relative;
-	float:left;
 }
 
 #clearDiv {
