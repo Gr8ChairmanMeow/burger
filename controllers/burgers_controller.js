@@ -12,7 +12,7 @@ var burgerThisName = function(ingredientsArr) {
     var protein = ingredientsArr[1] + " ";
     var toppingsArr = ingredientsArr[2];
     var extra = ingredientsArr[3];
-    var burgerName = protein + size;
+    var burgerName = size + protein;
     var check = Array.isArray(toppingsArr);
     if (check) {
         for (var i = 0; i < toppingsArr.length; i++) {
