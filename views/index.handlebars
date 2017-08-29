@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-5" id="left">
-            <h2>Let's burger! <img src="https://s2.postimg.org/dufgt5iop/burger.png" alt="eat" width="40"/></h2>
+            <h2>Let's burger! <img src="assets/images/burger.png" alt="eat" width="40"/></h2>
             <hr>
             <ul>
                 {{#each burgers}} {{#unless this.devoured}}
@@ -22,7 +22,7 @@
         <div class="col-md-2">
         </div>
         <div class="col-md-5" id="right">
-            <h2>Burgers in da TUMMY! <img src="https://s2.postimg.org/bzy0xo6ah/bitten.png" alt="eaten" width="42"/></h2>
+            <h2>Burgers in da TUMMY! <img src="assets/images/bitten.png" alt="eaten" width="42"/></h2>
             <hr>
             <ul>
                 {{#each burgers}} {{#if this.devoured}}
@@ -70,4 +70,7 @@
         </div>
         <button type="submit">Add Burger</button>
     </form>
+</div>
+<div class="icons">
+    <a href="https://github.com/Gr8ChairmanMeow/burger" target="_blank"><img src="assets/images/github.png" alt="GitHub"/ height="50" width="50"></a>
 </div>

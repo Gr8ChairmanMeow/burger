@@ -12,6 +12,11 @@ body {
     background-color: black;
 }
 
+.icons{
+    margin-top:0.5em;
+    text-align:center;
+}
+
 .create-update-form {
     padding: 5px;
     margin: 5px;
@@ -30,7 +35,7 @@ body {
 }
 
 #createTitle{
-  color:white;
+    color:white;
 }
 
 #clearDiv {
